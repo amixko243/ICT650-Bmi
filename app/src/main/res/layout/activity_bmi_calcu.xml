@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".BmiCalcu">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your input"
+        android:textSize="45sp"
+        android:textColor="#000"
+        android:layout_marginHorizontal="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weight in KG"
+        android:layout_marginHorizontal="30dp"/>
+
+    <EditText
+        android:id="@+id/weighh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:padding="12sp"
+        android:inputType="numberDecimal"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/edit_bg"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Height in CM"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="15dp"/>
+
+    <EditText
+        android:id="@+id/heighh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:padding="12sp"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edit_bg"/>
+
+    <Button
+        android:id="@+id/btnCal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="15dp"
+        android:text="Calculate"
+        android:textColor="#000"
+        android:background="@drawable/btn_bg"
+        android:onClick="CalculateBmii"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Result"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/resultt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginVertical="15dp"
+        android:text="Reset"
+        android:textColor="#000"
+        android:background="@drawable/btn_bg"/>
+
+</LinearLayout>
